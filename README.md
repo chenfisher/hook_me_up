@@ -20,7 +20,7 @@ Or install it yourself as:
 
 ## Usage
 
-1. Include HookMeUp in you class
+1. Include HookMeUp in your class
 2. call `hook_me_up` with a method name or array of methods and specify `:before` hook, `:after` hook or both.
 
 NOTE: `hook_me_up` call **must** come after your method definitions
@@ -53,7 +53,7 @@ NOTE: `hook_me_up` call **must** come after your method definitions
 ## Arguments
 
 ### When called with method names
-The `:before` hook is passed with and optional `*args`:  
+The `:before` hook is passed with an optional `*args`, which are the arguments passed to the original method:  
 
 	def before(*args)
 	end
