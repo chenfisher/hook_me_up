@@ -8,7 +8,7 @@ Gem::Specification.new do |gem|
   gem.version       = HookMeUp::VERSION
   gem.authors       = ["Chen Fisher"]
   gem.email         = ["chen.fisher@gmail.com"]
-  gem.description   = %q{Lets you hook any method class with :before and :after hooks}
+  gem.description   = %q{Lets you hook any method with :before and :after hooks}
   gem.summary       = %q{This gem lets you hook and method in any class with a before and after hooks}
   gem.homepage      = ""
 
