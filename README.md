@@ -30,19 +30,19 @@ class SomeClass
   include HookMeUp
 
 	def some_method
-		end
-
-		def some_other_method
-		end
-
-		def before_hook
-		end
-
-		def after_hook
-		end
-
-		hook_me_up [:some_method, :some_other_method], :before => :before_hook, :after => :after_hook
 	end
+
+	def some_other_method
+	end
+
+	def before_hook
+	end
+
+	def after_hook
+	end
+
+	hook_me_up [:some_method, :some_other_method], :before => :before_hook, :after => :after_hook
+end
 ```
 
 ### Disabling hooks for a specific call
