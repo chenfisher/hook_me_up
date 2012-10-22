@@ -44,6 +44,18 @@ NOTE: `hook_me_up` call **must** come after your method definitions
 		hook_me_up [:some_method, :some_other_method], :before => :before_hook, :after => :after_hook
 	end
 
+### Disabling hooks for a specific call
+You can disable a hooks on specific calls with the following options:
+
+* :no_hook  
+* :no_before_hook  
+* :no_after_hook  
+
+```ruby
+some_method(args, no_hook: true) # No hooks will be called
+some_method(args, no_before_hook: true) # The before hook will be skipped
+some_method(args, no_after_hook: true)	# The After hook will be skipped
+```
 
 ###You can pass lambda to the hooks instead of methods
 
