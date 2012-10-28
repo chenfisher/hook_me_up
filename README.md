@@ -58,7 +58,7 @@ some_method(args, no_before_hook: true) # The before hook will be skipped
 some_method(args, no_after_hook: true)	# The After hook will be skipped
 ```
 
-###You can pass lambda to the hooks instead of methods
+### You can pass lambda to the hooks instead of methods
 
 	hook_me_up :some_method, :before => lambda{ |sender, *args| sender.do_something(args) },
 			:after => lambda{ |sender, *args, result| sender.do_something_else(result) }
